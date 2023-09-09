@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&family=M+PLUS+1&family=PT+Sans&display=swap');
+
+
+.projects {
+  margin: 5%;
+  padding: 10px;
+}
+
+.head {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h3 {
+  color: #0d445f;
+}
+.icon-view {
+  display: none;
+}
+
+.project-card {
+  padding: 3%;
+}
+
+a.project-title {
+  color: #000;
+}
+h5 {
+  margin: 1em;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'M PLUS 1', sans-serif;
+}
+img.project-img {
+  border: 1px solid #b1b1b1;
+  border-radius: 4px;
+  padding: 4px;
+  height: 120px;
+  width: auto;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text {
+  padding: 0 5px;
+}
+#stacks {
+  font-size: .9em;
+  font-family: 'KoHo', sans-serif;
+  color: rgb(17, 87, 122);
+}
+#description {
+  font-family: 'PT Sans', sans-serif;
+}
+
+
+@media only screen and (min-width: 481px) {
+  img.project-img {
+    width: 120px;
+    height: auto;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+  }
+}

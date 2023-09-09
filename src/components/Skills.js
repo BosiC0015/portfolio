@@ -12,6 +12,8 @@ export default function Skills() {
         <div id="languages" className="sorts">
           <img className="stack-img" alt="js" src="https://drive.google.com/uc?export=view&id=1MDMQaRCt7KvD6gbN-6Fe0Y_5rw-sdR_e" />
           <img className="stack-img" alt="python" src="https://drive.google.com/uc?export=view&id=1LuC9FqQtI5apXHIPUmsXZ2R1ohMCeFMT" />
+          <img className="stack-img" alt="c#" src="https://drive.google.com/uc?export=view&id=1gOsbVXoGqwhrtRcW1suYArhfdHrXpKt-&usp=drive_fs" />
+          <img className="stack-img" alt="ruby" src="https://drive.google.com/uc?export=view&id=1MpX5EEe84wNTW4j56IdReOV_7lsfh500" />
         </div>
         <h3>Back End</h3>
         <div id="back-end" className="sorts">
@@ -20,7 +22,6 @@ export default function Skills() {
           <img className="stack-img" alt="postgres" src="https://drive.google.com/uc?export=view&id=1MgnQXlUMqAxEeYOZ6bLoIUDs3c6xSw7P" />
           <img className="stack-img" alt="jquery" src="https://drive.google.com/uc?export=view&id=1MwIo42zeCy1DaGmhZlQZ9b6wWsuK5skU" />
           <img className="stack-img" alt="ejs" src="https://drive.google.com/uc?export=view&id=1Mkx0xG7oTTOSn4CMSIeLgI3z-HD5BFIP" />
-          <img className="stack-img" alt="ruby" src="https://drive.google.com/uc?export=view&id=1MpX5EEe84wNTW4j56IdReOV_7lsfh500" />
           <img className="stack-img" alt="ruby on rails" src="https://drive.google.com/uc?export=view&id=1MtZphWX-BOVltJ9l0b1EmZOkoTt9BCHL" />
         </div>
         <h3>Front End</h3>

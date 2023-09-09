@@ -2,9 +2,10 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import ShortIntro from './components/ShortIntro';
 import ProjectPage from './components/projectpage/Projectpage';
+import Skills from './components/Skills';
+import More from './components/More';
 import useVisualMode from './hooks/useVisualHook';
 import './App.css';
-import Skills from './components/Skills';
 
 function App() {
   const INTRO = 'INTRO';
@@ -24,7 +25,7 @@ function App() {
       {mode === INTRO && <ShortIntro />}
       {mode === SKILLS && <Skills />}
       {mode === PROJECTS && <ProjectPage />}
-      {mode === MORE}
+      {mode === MORE && <More />}
       <Footer />
     </div>
   );

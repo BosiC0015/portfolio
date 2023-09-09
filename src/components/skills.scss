@@ -1,0 +1,49 @@
+h3 {
+  text-align: left;
+}
+
+.skills {
+  margin: 3% 5%;
+  padding: 10px;
+  text-align: left;
+}
+
+.stacks.dropdown {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+}
+
+.sorts {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.stack-img {
+  border: 1px solid #b1b1b1;
+  border-radius: 4px;
+  padding: 4px;
+  margin-right: 3%;
+  margin-top: 1.5%;
+  vertical-align: middle;
+  height: 40px;
+}
+.stack-img:hover {
+  transform: scale(1.2);
+}
+
+
+@media only screen and (min-width: 481px) {
+  .stack-img {
+    border: 1px solid #b1b1b1;
+    border-radius: 4px;
+    padding: 4px;
+    margin-right: 3%;
+    margin-top: 1.5%;
+    vertical-align: middle;
+    height: 50px;
+  }
+}

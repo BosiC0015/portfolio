@@ -65,7 +65,7 @@ export default function Skills() {
           <img className="stack-img" id="storybook" alt="storybook" src="https://drive.google.com/uc?export=view&id=13OrvusZmqDlgslrth5n8dWuoWFc4HVx3" />
           <Tooltip anchorSelect="#cypress" place="top">Cypress</Tooltip>
           <img className="stack-img" id="cypress" alt="cypress" src="https://drive.google.com/uc?export=view&id=1GXivIWDULFKG2Sa5rbgy03CNuJoSdRfe" />
-          <Tooltip anchorSelect="#rspec" place="top">Rubrspecy</Tooltip>
+          <Tooltip anchorSelect="#rspec" place="top">RSpec</Tooltip>
           <img className="stack-img" id="rspec" alt="rspec" src="https://drive.google.com/uc?export=view&id=1cPZq-8Q6CmLCOPzuuEDefGKdvCHBkICr" />
         </div>
         <h3>Soft Skills</h3>

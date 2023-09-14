@@ -18,7 +18,7 @@ export default function Skills() {
           <Tooltip anchorSelect="#csharp" place="top">C#</Tooltip>
           <img className="stack-img" id="csharp" alt="c#" src="https://drive.google.com/uc?export=view&id=1gOsbVXoGqwhrtRcW1suYArhfdHrXpKt-&usp=drive_fs" />
           <Tooltip anchorSelect="#php" place="top">PHP</Tooltip>
-          <img className="stack-img" id="php" alt="c#" src="" />         
+          <img className="stack-img" id="php" alt="php" src="" />         
           <Tooltip anchorSelect="#ruby" place="top">Ruby</Tooltip>
           <img className="stack-img" id="ruby" alt="ruby" src="https://drive.google.com/uc?export=view&id=1MpX5EEe84wNTW4j56IdReOV_7lsfh500" />
           <Tooltip anchorSelect="#html" place="top">HTML</Tooltip>
@@ -39,6 +39,10 @@ export default function Skills() {
           <img className="stack-img" id="rails" alt="ruby on rails" src="https://drive.google.com/uc?export=view&id=1MtZphWX-BOVltJ9l0b1EmZOkoTt9BCHL" />
         </div>
         <h3>Databases</h3>
+          <Tooltip anchorSelect="mysql" place="top">MySQL</Tooltip>
+          <img className="stack-img" id="mysql" alt="mysql" src="" />
+          <Tooltip anchorSelect="mysql" place="top">MySQL</Tooltip>
+          <img className="stack-img" id="mariadb" alt="mariadb" src="" />
           <Tooltip anchorSelect="#postgres" place="top">PostgreSQL</Tooltip>
           <img className="stack-img" id="postgres" alt="postgres" src="https://drive.google.com/uc?export=view&id=1MgnQXlUMqAxEeYOZ6bLoIUDs3c6xSw7P" />
         <h3>Back End</h3>

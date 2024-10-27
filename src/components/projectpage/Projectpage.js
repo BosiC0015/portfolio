@@ -1,6 +1,6 @@
-import { ProjectHead } from "./ProjectHead";
 import Portfolio from "./projects/Portfolio";
 import MLTDCalculator from "./projects/MLTDCalculator";
+import StudentRegistrationApp from "./projects/StudentRegistration";
 import MyTinyJournal from "./projects/MyTinyJournal";
 import InterviewScheduler from "./projects/InterviewScheduler";
 import FoodPickupOrdering from "./projects/FoodPickupOrdering";
@@ -12,20 +12,20 @@ import "./Projectpage.css";
 
 export default function ProjectPage() {
   return (
-    <main>
-      <div className="projects">
-        <ProjectHead />
-        <div className="projects-container">
-          <Portfolio />
-          <MLTDCalculator />
-          <MyTinyJournal />
-          <InterviewScheduler />
-          <FoodPickupOrdering />
-          <Jungle />
-          <Tweeter />
-          <TinyApp />
-        </div>
+    <div id="projects" className="projects">
+      {/* <ProjectHead /> */}
+      <h1>My Projects</h1>
+      <div className="projects-container">
+        <Portfolio />
+        <MLTDCalculator />
+        <StudentRegistrationApp />
+        <MyTinyJournal />
+        <InterviewScheduler />
+        <FoodPickupOrdering />
+        <Jungle />
+        <Tweeter />
+        <TinyApp />
       </div>
-    </main>
+    </div>
   );
 };

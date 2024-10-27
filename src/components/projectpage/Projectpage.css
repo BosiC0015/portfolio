@@ -1,36 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&family=M+PLUS+1&family=PT+Sans&display=swap');
 
-
 .projects {
-  margin: 5%;
+  padding-top: 5em;
+}
+
+h1 {
+  margin: 0 5%;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.projects-container {
+  margin: 3% 5%;
   padding: 10px;
+  /* text-align: left; */
 }
 
-.head {
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+/* .head { */
+  /* padding: 5px 0; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+/* } */
 
-h3 {
+/* h3 {
   color: #0d445f;
-}
+} */
 .icon-view {
   display: none;
 }
 
 .project-card {
-  padding: 3%;
+  padding-right: 3%;
 }
 
 a.project-title {
   color: #000;
+  /* color: aliceblue; */
 }
 h5 {
-  margin: 1em;
-  text-align: center;
+  margin: 1em 0;
+  text-align: left;
+  /* text-align: center; */
   text-decoration: underline;
+  font-size: 1.25em;
   font-family: 'M PLUS 1', sans-serif;
 }
 img.project-img {
@@ -42,29 +55,34 @@ img.project-img {
 }
 .about {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
 }
-.text {
+/* .text {
   padding: 0 5px;
-}
+} */
 #stacks {
-  font-size: .9em;
+  text-align: left;
+  font-size: 1.1em;
   font-family: 'KoHo', sans-serif;
-  color: rgb(17, 87, 122);
+  /* color: rgb(17, 87, 122); */
 }
 #description {
+  padding-right: 5%;
+  text-align: start;
+  font-size: 1.15em;
   font-family: 'PT Sans', sans-serif;
 }
 
 
 @media only screen and (min-width: 481px) {
   img.project-img {
-    width: 120px;
+    width: 240px;
     height: auto;
   }
   .about {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 }

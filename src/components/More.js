@@ -1,10 +1,12 @@
 import React from "react";
-
+import "./more.scss";
 
 export default function More() {
   return (
-    <main>
-      <p className="more-about">More About Me:</p>
+    <div id="more-about-me" className="more-about-me">
+      <h1>More About Me:</h1>
+      {/* <div>Education</div> */}
+      {/* <div>Resume</div> */}
       <div className="intro-text">
         <p className="content">From player to developer.</p>
         <p className="content">Game playing has always been a part of my whole growing up experience. It was fascinating for me how the beautiful world was created and how the interesting systems were created just by typing some words. After finishing my Bachelor’s degree in Engineering, I still can’t put aside my yearn for the virtual world. Finally this made me meet Lighthouse Lab, where I definitely made my first step to the world of programming. The courses of the 12-week-long web development bootcamp for full stack developers were compact-designed, but it made me feel amused instead. </p>
@@ -13,6 +15,6 @@ export default function More() {
         <p className="content">While I am away from my work, I am not away from coding. In my free time, I would make some small applications to make it more convenient in my life, like is shown in my projects. </p>
         <p className="content">I will keep on with the continuing game called coding in my life.</p>
       </div>
-    </main>
+    </div>
   );
 };

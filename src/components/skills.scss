@@ -1,11 +1,23 @@
-h3 {
+h1 {
+  margin: 0 5%;
+  padding: 0 10px;
   text-align: left;
 }
 
+h3 {
+  text-align: left;
+  font-family: 'PT Sans', sans-serif;
+}
+
 .skills {
+  padding-top: 5em;
+}
+
+.skills-container {
   margin: 3% 5%;
   padding: 10px;
   text-align: left;
+  font-family: 'M PLUS 1', sans-serif;
 }
 
 .stacks.dropdown {

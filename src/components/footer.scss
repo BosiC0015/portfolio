@@ -2,8 +2,12 @@
 
 
 .footer {
+  // position: sticky;
+  bottom: 0;
+  width: 100%;
   padding-bottom: 5%;
-  background-color: #A5DEE4;
+  // color: azure;
+  background-color: #10127544;
   font-family: 'Kanit', sans-serif;
   font-size: 1.5em;
 }
@@ -13,8 +17,9 @@
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 5px;
+  // color: azure;
   color: black;
 }
 .contact-icons:hover {
-  color: #268785;
+  color: #70cac9;
 }

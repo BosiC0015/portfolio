@@ -4,8 +4,8 @@ import ShortIntro from './components/ShortIntro';
 import ProjectPage from './components/projectpage/Projectpage';
 import Skills from './components/Skills';
 import More from './components/More';
-// import useVisualMode from './hooks/useVisualHook';
 import './App.css';
+// import useVisualMode from './hooks/useVisualHook';
 
 function App() {
   // const INTRO = 'INTRO';

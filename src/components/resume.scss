@@ -1,0 +1,54 @@
+h1 {
+  margin: 0 5%;
+  padding: 0 10px;
+  text-align: left;
+}
+
+h3 {
+  text-align: left;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.resume {
+  padding-top: 5em;
+}
+
+.resume-container {
+  margin: 0 5% 5% 5%;
+  padding: 10px;
+  text-align: left;
+  font-family: 'M PLUS 1', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a p {
+  font-size: larger;
+  position: relative;
+  display: inline-block;
+}
+
+.resume-container a p::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust the vertical position of the underline */
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: currentColor; /* Use the text color for the underline */
+  transform: scaleX(0); /* Initially hidden */
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.resume-container a:hover p::before {
+  transform: scaleX(1); /* Reveal the underline on hover of the <a> */
+}
+
+embed {
+  margin: 2% 0;
+  width: 800px;
+  height: 600px;
+}

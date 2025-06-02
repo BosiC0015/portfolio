@@ -3,8 +3,9 @@ import Footer from './components/Footer';
 import ShortIntro from './components/ShortIntro';
 import ProjectPage from './components/projectpage/Projectpage';
 import Skills from './components/Skills';
-import More from './components/More';
+// import More from './components/More';
 import './App.css';
+import Resume from './components/Resume';
 // import useVisualMode from './hooks/useVisualHook';
 
 function App() {
@@ -28,9 +29,10 @@ function App() {
       {/* {mode === PROJECTS && <ProjectPage />} */}
       {/* {mode === MORE && <More />} */}
       <ShortIntro />
-      <Skills />
       <ProjectPage />
-      <More />
+      <Skills />
+      {/* <More /> */}
+      <Resume />
       <Footer />
     </main>
   );

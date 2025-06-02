@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
+nav {
+  position: sticky;
+  top: 0;
+  background-color: rgb(247, 251, 254);
+  z-index: 10;
+}
+
 .nav {
-  
   &-collapsed {
-    position: sticky;
-    top: 0;
-    // width: 100vw;
-    // height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 1em;
-    // color: azure;
     background-color: transparent;
   }
 
   &-expanded {
-    position: sticky;
-    top: 0;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -56,24 +55,89 @@ a {
   font-family: 'Kanit', sans-serif;
   font-size: 1.5em;
   color: aliceblue;
+  position: relative;
+  display: inline-block;
 }
-.nav-link:hover {
-  text-decoration: line-through;
+.nav-link::after {
+  content: '';
+  position: absolute;
+  top: 50%; /* Position vertically in the middle of the text */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Thickness of the line */
+  background-color: aliceblue; /* Color of the line */
+  transform: scaleX(0); /* Start with the line hidden (scaled to 0 width) */
+  transform-origin: left; /* Make the animation expand from the left */
+  transition: transform 0.3s ease-out; /* Smooth animation */
+}
+.nav-link:hover::after {
+  transform: scaleX(1); /* Expand the line to full width */
 }
 
 .hide {
   display: none;
 }
 
+.nav-bar {
+  display: none;
+}
 
-// @media only screen and (min-width: 768px) {
-//   .links {
-//     display: flex;
-//     flex-direction: row;
-//     padding: 0 .75rem;
-//   }
+@media only screen and (min-width: 768px) {
+  #nav {
+    display: none;
+  }
 
-//   .nav-icon {
-//     display: none;
-//   }
-// }
+  #nav-bar {
+    display: flex;
+    // height: 88px;
+    height: 80px;
+    background-color: #393952ee;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .links-list {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .nav-link {
+    margin: 0 10px;
+    padding: 2.5% 0;
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .nav-button {
+    border: solid .5px transparent;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    color: aliceblue;
+  }
+
+  .nav-bar a p {
+    position: relative;
+  }
+
+  .nav-bar a p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust position of the underline */
+    width: 100%;
+    height: 2px;
+    background-color: aliceblue;
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav-bar a:hover p::before {
+    transform: scaleX(1); /* Reveal on hover of the <a> */
+  }
+}

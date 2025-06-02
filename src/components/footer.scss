@@ -2,24 +2,40 @@
 
 
 .footer {
-  // position: sticky;
   bottom: 0;
   width: 100%;
-  padding-bottom: 5%;
-  // color: azure;
-  background-color: #10127544;
+  padding: 0 0 5% 5%;
+  // padding-bottom: 5%;
+  color: white;
+  background-color: #393952ee;
   font-family: 'Kanit', sans-serif;
   font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .contact-icons {
+  width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 5px;
-  // color: azure;
-  color: black;
+}
+.icon {
+  color: white;
 }
 .contact-icons:hover {
   color: #70cac9;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .contact-icons {
+  width: 12em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5px;
+}
 }

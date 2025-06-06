@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
-  background-color: rgb(247, 251, 254);
   z-index: 10;
+  width: 100vw;
 }
 
 .nav {
+  // background-color: rgb(247, 251, 254);
+
   &-collapsed {
     display: flex;
     flex-direction: column;
@@ -21,7 +23,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 1em;
-    color: azure;
+    color: white;
     background-color: #393952ee;
   }
 }
@@ -35,6 +37,7 @@ nav {
   display: flex;
   flex-direction: column;
   padding: .75em;
+  // margin-left: auto;
 }
 
 .links {
@@ -74,6 +77,15 @@ a {
   transform: scaleX(1); /* Expand the line to full width */
 }
 
+.nav-button {
+  padding: 5px;
+  margin: 0 50px;
+  border: solid .5px transparent;
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.5em;
+  color: #393952;
+}
+
 .hide {
   display: none;
 }
@@ -89,9 +101,9 @@ a {
 
   #nav-bar {
     display: flex;
-    // height: 88px;
     height: 80px;
-    background-color: #393952ee;
+    // background-color: #393952ee;
+    background-color: rgba(255, 255, 255, 0.6);
     align-items: center;
     justify-content: center;
   }
@@ -101,7 +113,6 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
   }
 
   .nav-link {
@@ -109,16 +120,11 @@ a {
     padding: 2.5% 0;
     display: flex;
     align-items: center;
+    color: #393952;
   }
 
   a {
     text-decoration: none;
-  }
-  .nav-button {
-    border: solid .5px transparent;
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.5em;
-    color: aliceblue;
   }
 
   .nav-bar a p {
@@ -132,7 +138,8 @@ a {
     bottom: -2px; /* Adjust position of the underline */
     width: 100%;
     height: 2px;
-    background-color: aliceblue;
+    // background-color: aliceblue;
+    background-color: #393952;
     transform: scaleX(0); /* Initially hidden */
     transform-origin: left;
     transition: transform 0.3s ease-in-out;

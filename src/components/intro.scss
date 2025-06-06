@@ -8,9 +8,7 @@
   display: grid;
   margin: 5%;
   margin-bottom: 5%;
-  padding: 10px;
-  // grid-template-rows: 3fr 2fr;
-  // grid-template-rows: 1fr;
+  padding: 20px;
   align-items: center;
   justify-items: center;
 }
@@ -27,7 +25,7 @@
 }
 #name {
   margin: 15px;
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: 500;
 }
 #bio {

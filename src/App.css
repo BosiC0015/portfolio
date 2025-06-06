@@ -3,6 +3,7 @@
   padding: 0;
   /* color: aliceblue; */
   /* background-color: #00005Cee; */
-  background-color: rgb(247, 251, 254);
+  /* background-color: rgb(247, 251, 254); */
   text-align: center;
+  overflow: scroll;
 }

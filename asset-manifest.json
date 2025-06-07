@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.19561805.css",
-    "main.js": "/portfolio/static/js/main.d80d34c0.js",
+    "main.css": "/portfolio/static/css/main.f490a02b.css",
+    "main.js": "/portfolio/static/js/main.9bf6619e.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/FoodOrdering.png": "/portfolio/static/media/FoodOrdering.6fb1aca037bcad34bf85.png",
     "static/media/Journal.png": "/portfolio/static/media/Journal.6d9e8825ea2fecc849cf.png",
     "static/media/MLTDCalculator.png": "/portfolio/static/media/MLTDCalculator.83d6edce40c088a59bc2.png",
     "static/media/cover.jpg": "/portfolio/static/media/cover.22ac6d3799656286b521.jpg",
-    "static/media/image1.jpg": "/portfolio/static/media/image1.1d1dbf46b4508d9f9fdd.jpg",
+    "static/media/image1.jpg": "/portfolio/static/media/image1.3295c254e266de46bbc4.jpg",
     "static/media/Jungle.png": "/portfolio/static/media/Jungle.3fa53d4394d070633b1b.png",
     "static/media/Scheduler.png": "/portfolio/static/media/Scheduler.9e3dff071c1b744619f2.png",
     "static/media/Tweeter.png": "/portfolio/static/media/Tweeter.78c347d9d145c0b07e98.png",
@@ -17,7 +17,6 @@
     "static/media/StudentRegistration.png": "/portfolio/static/media/StudentRegistration.f9ab79e3abe5e35e80b7.png",
     "static/media/mariadb.png": "/portfolio/static/media/mariadb.92f19a57b0716d8fb55a.png",
     "static/media/python.png": "/portfolio/static/media/python.393ecf65efcaf6e60a81.png",
-    "static/media/mocha-chai.png": "/portfolio/static/media/mocha-chai.f8abf90962988753175a.png",
     "static/media/node.png": "/portfolio/static/media/node.abfaef34ea49d0c7cd3c.png",
     "static/media/ruby.png": "/portfolio/static/media/ruby.1a12c16e6e98b6d3e273.png",
     "static/media/Ruby_on_Rails.png": "/portfolio/static/media/Ruby_on_Rails.a272444fee188c3c05c4.png",
@@ -26,20 +25,18 @@
     "static/media/react.png": "/portfolio/static/media/react.60daf01b68943de8bf7f.png",
     "static/media/Bootstrap.png": "/portfolio/static/media/Bootstrap.5df18c6936ab8ca3b227.png",
     "static/media/html.png": "/portfolio/static/media/html.a92a549a591f4acb527a.png",
-    "static/media/jest.png": "/portfolio/static/media/jest.37efbf74e1e0f8eb6ddb.png",
     "static/media/css.png": "/portfolio/static/media/css.36b2d80f5a5991ca3a4b.png",
     "static/media/jquery.png": "/portfolio/static/media/jquery.4e57e42ed36ca1fe4999.png",
     "static/media/mysql.png": "/portfolio/static/media/mysql.a04abbf76b39676bc4d9.png",
     "static/media/php.png": "/portfolio/static/media/php.0a564540c19c7189202e.png",
     "static/media/scss.png": "/portfolio/static/media/scss.5e9edffeb2e392a63e04.png",
-    "static/media/cypress.webp": "/portfolio/static/media/cypress.d01e17338a25519df2d2.webp",
     "index.html": "/portfolio/index.html",
-    "main.19561805.css.map": "/portfolio/static/css/main.19561805.css.map",
-    "main.d80d34c0.js.map": "/portfolio/static/js/main.d80d34c0.js.map",
+    "main.f490a02b.css.map": "/portfolio/static/css/main.f490a02b.css.map",
+    "main.9bf6619e.js.map": "/portfolio/static/js/main.9bf6619e.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19561805.css",
-    "static/js/main.d80d34c0.js"
+    "static/css/main.f490a02b.css",
+    "static/js/main.9bf6619e.js"
   ]
 }

@@ -3,11 +3,10 @@
 
 .footer {
   bottom: 0;
-  width: 100%;
-  padding: 0 0 5% 5%;
-  // padding-bottom: 5%;
+  // width: 100vw;
+  padding: 0 5% 5% 5%;
   color: white;
-  background-color: #393952ee;
+  background-color: #44617bee;
   font-family: 'Kanit', sans-serif;
   font-size: 1.5em;
   display: flex;
@@ -19,14 +18,18 @@
   width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  // justify-content: space-between;
   margin-top: 5px;
 }
 .icon {
   color: white;
 }
-.contact-icons:hover {
-  color: #70cac9;
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.contact-icons a {
+  margin-right: 10%;
 }
 
 

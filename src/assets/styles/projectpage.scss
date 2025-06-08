@@ -31,6 +31,7 @@
   border-radius: 15px;
   background-color: #455765;
   color: #e7e7eb;
+  box-shadow: 5px 5px 1px .5px #e7e7eb55;
 }
 
 .project-title h2 {
@@ -66,6 +67,10 @@ img.project-img {
   padding: 10px;
 }
 
+.not-live {
+  display: none;
+}
+
 .about {
   display: flex;
   flex-direction: column-reverse;
@@ -74,31 +79,32 @@ img.project-img {
 .text {
   padding: 0 5px;
 }
-#stacks {
+.stacks {
   text-align: left;
   font-size: 1.1em;
   font-family: 'KoHo', sans-serif;
 }
-#description {
+.description {
   padding-right: 5%;
   text-align: start;
   font-size: 1.15em;
   font-family: 'PT Sans', sans-serif;
 }
 
-@media only screen and (min-width: 481px) {
+// 481 748 
+@media only screen and (min-width: 725px) {
   .projects {
-    margin: 0 40px;
+    margin: 0 30px;
   }
 
   .projects h1 {
-    margin: 0 calc(5% - 40px);
+    margin: 0 calc(5% - 30px);
   }
 
   .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    gap: 15px;
     margin: 30px auto;
   }
 

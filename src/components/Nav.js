@@ -2,7 +2,7 @@ import React from "react";
 import { IconContext } from "react-icons";
 import { FaGripLines } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
-import "./nav.scss";
+import "../assets/styles/nav.scss";
 
 
 export default function Nav(props) {
@@ -50,23 +50,17 @@ export default function Nav(props) {
           <a href="#short-intro">
             <p className="nav-link" onClick={() => closeMenu()}>Short Intro</p>
           </a>
-          <a href="#projects">
-            <p className="nav-link" onClick={() => closeMenu()}>Projects</p>
-          </a>
           <a href="#skills">
             <p className="nav-link" onClick={() => closeMenu()}>Skills</p>
           </a>
-          {/* <a href="#more-about-me">
-            <p className="nav-link" onClick={() => closeMenu()}>More About Me</p>
-          </a> */}
-          <a href="#resume">
-            <p className="nav-link" onClick={() => closeMenu()}>Resume</p>
+          <a href="#projects">
+            <p className="nav-link" onClick={() => closeMenu()}>Projects</p>
           </a>
-          {/* <a href="https://github.com/BosiC0015" target="_blank" rel="noreferrer">
-            <p className="nav-link">GitHub</p>
-          </a> */}
-          {/* <a href="https://www.linkedin.com/in/bosi-chen-79657421b/" target="_blank" rel="noreferrer">
-            <p className="nav-link">LinkedIn</p>
+          <a href="#more-about-me">
+            <p className="nav-link" onClick={() => closeMenu()}>More About Me</p>
+          </a>
+          {/* <a href="#resume">
+            <p className="nav-link" onClick={() => closeMenu()}>Resume</p>
           </a> */}
         </div>
       </div>
@@ -75,18 +69,18 @@ export default function Nav(props) {
           <a href="#short-intro">
             <p className="nav-button">Short Intro</p>
           </a>
-          <a href="#projects">
-            <p className="nav-button">Projects</p>
-          </a>
           <a href="#skills">
             <p className="nav-button">Skills</p>
           </a>
-          {/* <a href="#more-about-me">
-            <p className="nav-button">More About Me</p>
-          </a> */}
-          <a href="#resume">
-            <p className="nav-button">Resume</p>
+          <a href="#projects">
+            <p className="nav-button">Projects</p>
           </a>
+          <a href="#more-about-me">
+            <p className="nav-button">More About Me</p>
+          </a>
+          {/* <a href="#resume">
+            <p className="nav-button">Resume</p>
+          </a> */}
         </div>
       </div>
     </nav>

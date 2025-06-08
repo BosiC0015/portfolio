@@ -1,7 +1,7 @@
 import React from "react";
-import "./intro.scss";
-import coverImg from "../../src/img/cover.jpg";
-import image1 from "../../src/img/image1.jpg";
+import "../assets/styles/shortintro.scss";
+import coverImg from "../assets/images/cover.jpg";
+import image1 from "../assets/images/image1.jpg";
 
 export default function ShortIntro () {
   return (

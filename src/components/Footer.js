@@ -2,7 +2,7 @@ import React from "react";
 import { IconContext } from "react-icons";
 import { MdEmail } from "react-icons/md";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import "./footer.scss";
+import "../assets/styles/footer.scss";
 
 
 export default function Footer() {

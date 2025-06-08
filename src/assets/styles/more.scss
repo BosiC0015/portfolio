@@ -4,17 +4,17 @@ h1 {
   text-align: left;
 }
 
-h3 {
-  text-align: left;
-  font-family: 'PT Sans', sans-serif;
-}
-
-.resume {
+.more-about-me {
   padding-top: 5em;
 }
 
-.resume-container {
-  margin: 0 5% 5% 5%;
+.more-container {
+  margin: 5%;
+  padding: 5px;
+}
+
+.resume {
+  margin: 0 5%;
   padding: 10px;
   text-align: left;
   font-family: 'M PLUS 1', sans-serif;
@@ -22,15 +22,19 @@ h3 {
 
 a {
   text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
 }
 
 a p {
+  margin: 10px;
   font-size: larger;
   position: relative;
   display: inline-block;
 }
 
-.resume-container a p::before {
+.resume a p::before {
   content: '';
   position: absolute;
   left: 0;
@@ -43,7 +47,7 @@ a p {
   transition: transform 0.3s ease-in-out;
 }
 
-.resume-container a:hover p::before {
+.resume a:hover p::before {
   transform: scaleX(1); /* Reveal the underline on hover of the <a> */
 }
 
@@ -51,4 +55,35 @@ embed {
   margin: 2% 0;
   width: 800px;
   height: 600px;
+}
+
+.my-story {
+  margin-bottom: 5%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-size: 1.1em;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d3cfd9;
+  scroll-margin-top: 10em;
+  background-color: #ffffff11;
+}
+
+
+
+@media only screen and (min-width: 481px) {
+  .more-container {
+    margin: 0 5%;
+  }
+
+  .resume {
+    margin: 0;
+    padding: 20px 10px;
+  }
+
+  .my-story {
+    margin: 0 0 10% 0;
+  }
 }

@@ -1,9 +1,8 @@
 .App {
   margin: 0;
   padding: 0;
-  /* color: aliceblue; */
-  /* background-color: #00005Cee; */
-  /* background-color: rgb(247, 251, 254); */
+  color: #e7e7eb;
+  background-color: #455765;
   text-align: center;
   overflow: scroll;
 }

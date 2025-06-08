@@ -24,7 +24,7 @@ nav {
     flex-direction: column;
     padding: 1em;
     color: white;
-    background-color: #393952ee;
+    background-color: #44617b;
   }
 }
 
@@ -37,7 +37,6 @@ nav {
   display: flex;
   flex-direction: column;
   padding: .75em;
-  // margin-left: auto;
 }
 
 .links {
@@ -57,7 +56,7 @@ a {
   border: solid .5px transparent;
   font-family: 'Kanit', sans-serif;
   font-size: 1.5em;
-  color: aliceblue;
+  color: white;
   position: relative;
   display: inline-block;
 }
@@ -68,7 +67,7 @@ a {
   left: 0;
   width: 100%;
   height: 2px; /* Thickness of the line */
-  background-color: aliceblue; /* Color of the line */
+  background-color: white; /* Color of the line */
   transform: scaleX(0); /* Start with the line hidden (scaled to 0 width) */
   transform-origin: left; /* Make the animation expand from the left */
   transition: transform 0.3s ease-out; /* Smooth animation */
@@ -83,7 +82,7 @@ a {
   border: solid .5px transparent;
   font-family: 'Kanit', sans-serif;
   font-size: 1.5em;
-  color: #393952;
+  color: #e7e7eb;
 }
 
 .hide {
@@ -99,32 +98,12 @@ a {
     display: none;
   }
 
-  #nav-bar {
+  .nav-bar {
     display: flex;
     height: 80px;
-    // background-color: #393952ee;
-    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    background-color: #45576511;
     align-items: center;
-    justify-content: center;
-  }
-  
-  .links-list {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .nav-link {
-    margin: 0 10px;
-    padding: 2.5% 0;
-    display: flex;
-    align-items: center;
-    color: #393952;
-  }
-
-  a {
-    text-decoration: none;
   }
 
   .nav-bar a p {
@@ -138,13 +117,35 @@ a {
     bottom: -2px; /* Adjust position of the underline */
     width: 100%;
     height: 2px;
-    // background-color: aliceblue;
-    background-color: #393952;
+    background-color: #e7e7eb;
     transform: scaleX(0); /* Initially hidden */
     transform-origin: left;
     transition: transform 0.3s ease-in-out;
   }
   .nav-bar a:hover p::before {
     transform: scaleX(1); /* Reveal on hover of the <a> */
+  }
+  
+  .links-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin: 0 10px;
+    padding: 2.5% 0;
+    display: flex;
+    align-items: center;
+    color: #e7e7eb;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav-button {
+    margin: 0 25px;
   }
 }

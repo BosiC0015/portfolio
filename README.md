@@ -11,15 +11,15 @@ I'm a Full-stack Developer with a passion for building scalable web applications
 ## Projects
 Here are a few highlights from my portfolio. Click on any project to learn more!
 
->### *im@s music library*
-A website built with Python and Flask for looking up im@s music and finding stream site. Used PostgreSQL(Supabase) for database integration. [Visit live site ↗]()
+<!-- >### *im@s music library*
+A website built with Python and Flask for looking up im@s music and finding stream site. Used PostgreSQL(Supabase) for database integration. [Visit live site ↗]() -->
 
 >### *MLTD calculator*
 React.js-based SPA using SCSS styling. Implemented dynamic calculation logic and responsive design features. [Visit live site ↗](https://bosic0015.github.io/mltd-calculator/)
 
-<!-- >### *[Project 3 Title]*
-A brief, one-sentence description of Project 3.
-[Link to Project 3 (if it's a separate repo or live demo)] -->
+>### *Portfolio website*
+Designed and developed a personal portfolio using React.js and SCSS. Fully responsive, featuring project showcases and contact functionality.
+[Visit live site ↗](https://bosic0015.github.io/portfolio/)
 
 
 ## Skills

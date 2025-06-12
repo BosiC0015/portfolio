@@ -9,7 +9,7 @@ export default function Skills() {
 
   return (
     <div id="skills" className="skills">
-      <h1>Main Skills</h1>
+      <h1>Main Development Skills</h1>
       <div className="skills-container">
         {skills.map(s => <SkillBox key={skills.indexOf(s)} name={s.name} image={s.image} />)}
         {/* <h3>Testing</h3>

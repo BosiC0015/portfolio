@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.40596d58.css",
-    "main.js": "/portfolio/static/js/main.f73ba17d.js",
+    "main.js": "/portfolio/static/js/main.9e27558c.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/FoodOrdering.png": "/portfolio/static/media/FoodOrdering.6fb1aca037bcad34bf85.png",
     "static/media/Journal.png": "/portfolio/static/media/Journal.6d9e8825ea2fecc849cf.png",
@@ -14,7 +14,7 @@
     "static/media/Scheduler.png": "/portfolio/static/media/Scheduler.9e3dff071c1b744619f2.png",
     "static/media/Tweeter.png": "/portfolio/static/media/Tweeter.78c347d9d145c0b07e98.png",
     "static/media/TinyApp.png": "/portfolio/static/media/TinyApp.1cb7275df5c43d08e5e2.png",
-    "static/media/Porfolio.png": "/portfolio/static/media/Porfolio.2d471504207e280c02fb.png",
+    "static/media/Portfolio.png": "/portfolio/static/media/Portfolio.612324aff5b2567bfa20.png",
     "static/media/Resume_Bosi_Chen.pdf": "/portfolio/static/media/Resume_Bosi_Chen.b3105907eef622188044.pdf",
     "static/media/StudentRegistration.png": "/portfolio/static/media/StudentRegistration.f9ab79e3abe5e35e80b7.png",
     "static/media/mariadb.png": "/portfolio/static/media/mariadb.92f19a57b0716d8fb55a.png",
@@ -31,11 +31,11 @@
     "static/media/php.png": "/portfolio/static/media/php.0a564540c19c7189202e.png",
     "index.html": "/portfolio/index.html",
     "main.40596d58.css.map": "/portfolio/static/css/main.40596d58.css.map",
-    "main.f73ba17d.js.map": "/portfolio/static/js/main.f73ba17d.js.map",
+    "main.9e27558c.js.map": "/portfolio/static/js/main.9e27558c.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.40596d58.css",
-    "static/js/main.f73ba17d.js"
+    "static/js/main.9e27558c.js"
   ]
 }

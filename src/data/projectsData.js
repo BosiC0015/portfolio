@@ -1,4 +1,4 @@
-import portfolioImg from "../assets/images/preview/Porfolio.png";
+import portfolioImg from "../assets/images/preview/Portfolio.png";
 import mltdCalculator from "../assets/images/preview/MLTDCalculator.png";
 import imasMusicLib from "../assets/images/preview/imasMusicLib.png";
 import socialMedia from "../assets/images/preview/SocialMedia.png";
@@ -12,7 +12,7 @@ import tinyApp from "../assets/images/preview/TinyApp.png";
 
 
 const projects = [
-  {id: "0", title: "Portfolio Website", github: "https://github.com/BosiC0015/personal-website", isLive: true, live: "https://bosic0015.github.io/portfolio/", stacks: "HTML, JavaScript, React.js, CSS, SCSS, Bootstrap", description: "My portfolio website, built with React.js CSS and SCSS. There is a homepage for introduction and connection and a project page outlining all my projects.", projectImg: portfolioImg},
+  {id: "0", title: "Portfolio Website", github: "https://github.com/BosiC0015/portfolio", isLive: true, live: "https://bosic0015.github.io/portfolio/", stacks: "HTML, JavaScript, React.js, CSS, SCSS, Bootstrap", description: "My portfolio website, built with React.js CSS and SCSS. There is a homepage for introduction and connection and a project page outlining all my projects.", projectImg: portfolioImg},
   {id: "1", title: "MLTD Calculator", github: "https://github.com/BosiC0015/mltd-calculator", isLive: true, live: "https://bosic0015.github.io/mltd-calculator/", stacks: "HTML, JavaScript, React.js, SCSS, Bootstrap", description: "A SPA for MLTD players to calculate how many times they need to play the regular or event songs to meet their event point goals.", projectImg: mltdCalculator},
   {id: "2", title: "im@s music library", github: "https://github.com/BosiC0015/imas-music", isLive: false, live: "https://imas-music.onrender.com/", stacks: "Python, Flask, HTML, CSS, JavaScript, PostgreSQL", description: "A sample website built with Python, Flask, HTML and CSS for looking up im@s music and finding stream site. Used PostgreSQL(hosted on Supabase) for database integration. ", projectImg: imasMusicLib},
   {id: "3", title: "Social Media", github: "https://github.com/BosiC0015/SocialMedia", isLive: false, live: "", stacks: "PHP, HTML, CSS, Bootstrap, MySQL", description: "A social media app developed using PHP, HTML, CSS & Bootstrap, with MySQL as database. Integrated user accounts, photo albums, and comment functionality.", projectImg: socialMedia},

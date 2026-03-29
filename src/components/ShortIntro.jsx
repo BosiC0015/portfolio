@@ -10,7 +10,7 @@ export default function ShortIntro () {
         {/* <div className="bg-img"></div> */}
         <div id="title">
           <p id="greeting">Hello, I'm</p>
-          <p id="name">Bosi Chen</p>
+          <h1 id="name">Bosi Chen</h1>
           <p id="bio">A Full Stack Web Developer</p>
         </div>
         <div id="cover-img">

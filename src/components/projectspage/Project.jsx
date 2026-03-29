@@ -9,7 +9,7 @@ export default function Project(props) {
   return (
     <section className="project-card">
       <div className="project-title">
-        <h2>{data.title}</h2>
+        <h3>{data.title}</h3>
       </div>
       <GitHubButton github={data.github} />
       <LivePageButton isLive={data.isLive} livePage={data.live} />

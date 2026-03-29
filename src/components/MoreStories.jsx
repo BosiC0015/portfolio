@@ -6,7 +6,7 @@ import resumePDF from "../documents/Resume_Bosi_Chen.pdf";
 export default function MoreStories() {
   return (
     <div id="more-about-me" className="more-about-me">
-      <h1>More About Me:</h1>
+      <h2>More About Me:</h2>
       {/* <div>Education</div> */}
       <div className="more-container">
         <div className="resume">

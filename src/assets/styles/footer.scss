@@ -20,6 +20,14 @@
   flex-direction: row;
   // justify-content: space-between;
   margin-top: 5px;
+
+  a {
+    size: 2em;
+    color: white;
+  }
+  a:hover {
+    transform: scale(1.2);
+  }
 }
 .icon {
   color: white;

@@ -20,8 +20,8 @@ export default function Footer() {
 
 
   return (
-    <footer className="footer">
-      <h2 id="contact-me">Find & Contact Me:</h2>
+    <footer id="footer" className="footer">
+      <h2>Find & Contact Me:</h2>
       <div className="contact-icons">
         <a href={contactInfo.email.ref} aria-label={contactInfo.email.ariaLabel}>{icons.email}</a>
         <a href={contactInfo.linkedIn.ref} aria-label={contactInfo.linkedIn.ariaLabel} target="_blank" rel="noreferrer">{icons.linkedIn}</a>

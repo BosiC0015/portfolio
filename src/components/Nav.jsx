@@ -1,68 +1,50 @@
-import React from "react";
-import { IconContext } from "react-icons";
-import { FaGripLines } from "react-icons/fa";
-import { MdOutlineClose } from "react-icons/md";
+import React, { useState } from "react";
 import "../assets/styles/nav.scss";
+import NavMenuItem from "./NavMenuItem";
 
 
 export default function Nav(props) {
-  const expandMenu = () => {
-    const nav = document.getElementById('nav')
-    const expand = document.getElementById('nav-expand')
-    const close = document.getElementById('nav-close')
-    const links = document.getElementById('links')
-    
-    nav.className = 'nav-expanded';
-    expand.classList.add('hide');
-    close.classList.remove('hide');
-    links.classList.remove('hide');
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
+
+  const menuClass = () => {
+    if (isOpen) {
+      return "show";
+    } else {
+      return;
+    };
   };
 
-  const closeMenu = () => {
-    const nav = document.getElementById('nav')
-    const expand = document.getElementById('nav-expand')
-    const close = document.getElementById('nav-close')
-    const links = document.getElementById('links')
-    
-    nav.className = 'nav-collapsed';
-    expand.classList.remove('hide');
-    close.classList.add('hide');
-    links.classList.add('hide');
+  const toggleList = () => {
+    if (isOpen) {
+      return "is-active"
+    } else {
+      return ""
+    }
+  }
+
+  const handleClick = () => {
+    setIsOpen(false)
   }
 
 
   return (
     <nav>
-      <div id="nav" className="nav-collapsed">
-        <div id="nav-expand" className="nav-menu" onClick={expandMenu}>
-          <IconContext.Provider value={{ size: '2em', className: 'icon-menu' }}>
-            <FaGripLines />
-          </IconContext.Provider>
-          {/* <p className="menu">MENU</p> */}
+      <div className="navBtn" onClick={toggleMenu}>
+        <div className={`expand ${toggleList()}`}>
+          <span></span><span></span>
         </div>
-        <div id="nav-close" className="nav-menu hide" onClick={closeMenu}>
-          <IconContext.Provider value={{ size: '2em', className: 'icon-hidden' }}>
-            <MdOutlineClose />
-          </IconContext.Provider>
-          {/* <p className="menu">MENU</p> */}
-        </div>
-        <div id="links" className="links hide">
-          <a href="#short-intro">
-            <p className="nav-link" onClick={() => closeMenu()}>Short Intro</p>
-          </a>
-          <a href="#skills">
-            <p className="nav-link" onClick={() => closeMenu()}>Skills</p>
-          </a>
-          <a href="#projects">
-            <p className="nav-link" onClick={() => closeMenu()}>Projects</p>
-          </a>
-          <a href="#more-about-me">
-            <p className="nav-link" onClick={() => closeMenu()}>More About Me</p>
-          </a>
-          {/* <a href="#resume">
-            <p className="nav-link" onClick={() => closeMenu()}>Resume</p>
-          </a> */}
-        </div>
+      </div>
+      <div id="navList" className={menuClass()}>
+        <ul>
+          <NavMenuItem label="Short Intro" destination="#short-intro" onclick={() => handleClick()} />
+          <NavMenuItem label="Skills" destination="#skills" onclick={() => handleClick()} />
+          <NavMenuItem label="Projects" destination="#projects" onclick={() => handleClick()} />
+          <NavMenuItem label="More About Me" destination="#more-about-me" onclick={() => handleClick()} />
+        </ul>
       </div>
       <div id="nav-bar" className="nav-bar">
         <div className="links-list">
@@ -78,9 +60,6 @@ export default function Nav(props) {
           <a href="#more-about-me">
             <p className="nav-button">More About Me</p>
           </a>
-          {/* <a href="#resume">
-            <p className="nav-button">Resume</p>
-          </a> */}
         </div>
       </div>
     </nav>

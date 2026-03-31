@@ -1,89 +1,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
-nav {
+.navBtn {
   position: fixed;
-  top: 0;
+  top: 36px;
+  right: 40px;
   z-index: 10;
-  width: 100vw;
 }
 
-.nav {
-  // background-color: rgb(247, 251, 254);
-
-  &-collapsed {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    background-color: transparent;
-  }
-
-  &-expanded {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    color: white;
-    background-color: #44617b;
-  }
-}
-
-.menu {
-  margin-top: 0;
-  text-align: left;
-}
-
-.nav-menu {
-  display: flex;
-  flex-direction: column;
-  padding: .75em;
-}
-
-.links {
-  margin-top: 1.5em;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-a {
-  text-decoration: none;
-}
-
-.nav-link {
-  margin: .5em;
-  padding: 0 2.5%;
-  border: solid .5px transparent;
-  font-family: 'Kanit', sans-serif;
-  font-size: 1.5em;
-  color: white;
-  position: relative;
-  display: inline-block;
-}
-.nav-link::after {
-  content: '';
-  position: absolute;
-  top: 50%; /* Position vertically in the middle of the text */
-  left: 0;
+#navList {
+  position: fixed;
+  right: 0px;
+  z-index: 5;
   width: 100%;
-  height: 2px; /* Thickness of the line */
-  background-color: white; /* Color of the line */
-  transform: scaleX(0); /* Start with the line hidden (scaled to 0 width) */
-  transform-origin: left; /* Make the animation expand from the left */
-  transition: transform 0.3s ease-out; /* Smooth animation */
-}
-.nav-link:hover::after {
-  transform: scaleX(1); /* Expand the line to full width */
+  height: 100dvh;
+  overflow-y: hidden;
+  padding-top: 80px;
+  // color: var(--shade-500);
+  background-color: #43617a;
+  transform: translateX(100%);
+  transition: transform 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+  &.show {
+    transform: translateX(0);
+  }
+
+  ul {
+    padding: 0;
+    margin: 10px;
+  }
 }
 
-.nav-button {
-  padding: 5px;
-  margin: 0 50px;
-  border: solid .5px transparent;
-  font-family: 'Kanit', sans-serif;
-  font-size: 1.5em;
-  color: #e7e7eb;
+.expand {
+  width: 40px; 
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+  span {
+    display: block;
+    width: 100%;
+    height: 1.2px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
 }
+
+.is-active span:nth-child(1) {
+  transform: translateY(4.5px) rotate(405deg);
+}
+.is-active span:nth-child(2) {
+  transform: translateY(-4.5px) rotate(315deg);
+}
+
+.menu-item {
+  position: relative;
+  list-style: none;
+  padding: 1.2rem 2rem;
+  overflow: hidden;
+
+  .item-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transform: translateX(0);
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    
+    .label-text {
+      font-weight: 350;
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+    }
+    
+    &:active {
+      background-color: #44617b;
+    }
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+// .nav {
+//   // background-color: rgb(247, 251, 254);
+
+//   &-collapsed {
+//     display: flex;
+//     flex-direction: column;
+//     padding: 1em;
+//     background-color: transparent;
+//   }
+
+//   &-expanded {
+//     width: 100%;
+//     height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     padding: 1em;
+//     color: white;
+//     background-color: #44617b;
+//   }
+// }
+
+// .nav-menu {
+//   display: flex;
+//   flex-direction: column;
+//   padding: .75em;
+// }
+
+// .links {
+//   margin-top: 1.5em;
+//   display: flex;
+//   flex-direction: column;
+//   text-align: left;
+// }
+
+// a {
+//   text-decoration: none;
+// }
+
+// .nav-link {
+//   margin: .5em;
+//   padding: 0 2.5%;
+//   border: solid .5px transparent;
+//   font-family: 'Kanit', sans-serif;
+//   font-size: 1.5em;
+//   color: white;
+//   position: relative;
+//   display: inline-block;
+// }
+// .nav-link::after {
+//   content: '';
+//   position: absolute;
+//   top: 50%; /* Position vertically in the middle of the text */
+//   left: 0;
+//   width: 100%;
+//   height: 2px; /* Thickness of the line */
+//   background-color: white; /* Color of the line */
+//   transform: scaleX(0); /* Start with the line hidden (scaled to 0 width) */
+//   transform-origin: left; /* Make the animation expand from the left */
+//   transition: transform 0.3s ease-out; /* Smooth animation */
+// }
+// .nav-link:hover::after {
+//   transform: scaleX(1); /* Expand the line to full width */
+// }
+
+// .nav-button {
+//   padding: 5px;
+//   margin: 0 50px;
+//   border: solid .5px transparent;
+//   font-family: 'Kanit', sans-serif;
+//   font-size: 1.5em;
+//   color: #e7e7eb;
+// }
 
 .hide {
   display: none;
@@ -94,6 +165,20 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+  }
+
+  .navBtn {
+    display: none;
+  }
+  #navList {
+    display: none;
+  }
+
   #nav {
     display: none;
   }

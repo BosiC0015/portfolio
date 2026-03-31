@@ -1,8 +1,12 @@
 .App {
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
   color: #e7e7eb;
   background-color: #455765;
-  text-align: center;
-  overflow: scroll;
+  /* text-align: center; */
+  /* overflow: scroll; */
 }
